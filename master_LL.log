@@ -1,0 +1,178 @@
+2020-12-01 20:43:28,573 - INFO - started job 0
+2020-12-01 20:43:28,574 - INFO - started task 0_M0 of job 0 on worker 2
+2020-12-01 20:43:28,574 - INFO - started task 0_M1 of job 0 on worker 2
+2020-12-01 20:43:29,374 - INFO - started job 1
+2020-12-01 20:43:29,375 - INFO - started task 1_M0 of job 1 on worker 1
+2020-12-01 20:43:30,610 - INFO - started job 2
+2020-12-01 20:43:30,610 - INFO - started task 2_M0 of job 2 on worker 2
+2020-12-01 20:43:30,612 - INFO - started task 2_M1 of job 2 on worker 1
+2020-12-01 20:43:30,612 - INFO - started task 2_M2 of job 2 on worker 2
+2020-12-01 20:43:30,613 - INFO - started task 2_M3 of job 2 on worker 1
+2020-12-01 20:43:30,954 - INFO - started job 3
+2020-12-01 20:43:30,955 - INFO - started task 3_M0 of job 3 on worker 2
+2020-12-01 20:43:31,262 - INFO - task 0_M0 of job 0 on worker 2 has finished executing
+2020-12-01 20:43:31,262 - INFO - task 3_M0 of job 3 on worker 2 has finished executing
+2020-12-01 20:43:31,262 - INFO - started task 3_R0 of job 3 on worker 2
+2020-12-01 20:43:31,677 - INFO - started job 4
+2020-12-01 20:43:31,678 - INFO - started task 4_M0 of job 4 on worker 2
+2020-12-01 20:43:31,749 - INFO - task 1_M0 of job 1 on worker 1 has finished executing
+2020-12-01 20:43:31,750 - INFO - started task 1_R0 of job 1 on worker 1
+2020-12-01 20:43:31,751 - INFO - started task 1_R1 of job 1 on worker 3
+2020-12-01 20:43:31,751 - INFO - task 2_M1 of job 2 on worker 1 has finished executing
+2020-12-01 20:43:31,752 - INFO - task 2_M3 of job 2 on worker 1 has finished executing
+2020-12-01 20:43:32,266 - INFO - task 0_M1 of job 0 on worker 2 has finished executing
+2020-12-01 20:43:32,268 - INFO - started task 0_R0 of job 0 on worker 1
+2020-12-01 20:43:32,269 - INFO - task 2_M2 of job 2 on worker 2 has finished executing
+2020-12-01 20:43:32,756 - INFO - task 0_R0 of job 0 on worker 1 has finished executing
+2020-12-01 20:43:32,794 - INFO - task 1_R1 of job 1 on worker 3 has finished executing
+2020-12-01 20:43:33,757 - INFO - task 1_R0 of job 1 on worker 1 has finished executing
+2020-12-01 20:43:33,923 - INFO - started job 5
+2020-12-01 20:43:33,923 - INFO - started task 5_M0 of job 5 on worker 1
+2020-12-01 20:43:33,925 - INFO - started task 5_M1 of job 5 on worker 1
+2020-12-01 20:43:33,926 - INFO - started task 5_M2 of job 5 on worker 2
+2020-12-01 20:43:33,929 - INFO - started task 5_M3 of job 5 on worker 1
+2020-12-01 20:43:34,269 - INFO - task 2_M0 of job 2 on worker 2 has finished executing
+2020-12-01 20:43:34,269 - INFO - started task 2_R0 of job 2 on worker 2
+2020-12-01 20:43:34,271 - INFO - started task 2_R1 of job 2 on worker 2
+2020-12-01 20:43:34,272 - INFO - task 3_R0 of job 3 on worker 2 has finished executing
+2020-12-01 20:43:34,272 - INFO - task 5_M2 of job 5 on worker 2 has finished executing
+2020-12-01 20:43:34,761 - INFO - task 5_M3 of job 5 on worker 1 has finished executing
+2020-12-01 20:43:35,273 - INFO - task 4_M0 of job 4 on worker 2 has finished executing
+2020-12-01 20:43:35,274 - INFO - started task 4_R0 of job 4 on worker 2
+2020-12-01 20:43:35,276 - INFO - started task 4_R1 of job 4 on worker 2
+2020-12-01 20:43:35,277 - INFO - task 2_R1 of job 2 on worker 2 has finished executing
+2020-12-01 20:43:35,764 - INFO - task 5_M0 of job 5 on worker 1 has finished executing
+2020-12-01 20:43:36,196 - INFO - started job 6
+2020-12-01 20:43:36,198 - INFO - started task 6_M0 of job 6 on worker 1
+2020-12-01 20:43:36,199 - INFO - started task 6_M1 of job 6 on worker 2
+2020-12-01 20:43:36,339 - INFO - started job 7
+2020-12-01 20:43:36,340 - INFO - started task 7_M0 of job 7 on worker 1
+2020-12-01 20:43:36,341 - INFO - started task 7_M1 of job 7 on worker 2
+2020-12-01 20:43:36,342 - INFO - started task 7_M2 of job 7 on worker 3
+2020-12-01 20:43:36,574 - INFO - started job 8
+2020-12-01 20:43:36,575 - INFO - started task 8_M0 of job 8 on worker 1
+2020-12-01 20:43:36,576 - INFO - started task 8_M1 of job 8 on worker 2
+2020-12-01 20:43:36,576 - INFO - started task 8_M2 of job 8 on worker 3
+2020-12-01 20:43:36,636 - INFO - started job 9
+2020-12-01 20:43:36,636 - INFO - started task 9_M0 of job 9 on worker 1
+2020-12-01 20:43:36,765 - INFO - task 5_M1 of job 5 on worker 1 has finished executing
+2020-12-01 20:43:36,766 - INFO - started task 5_R0 of job 5 on worker 1
+2020-12-01 20:43:36,767 - INFO - started task 5_R1 of job 5 on worker 2
+2020-12-01 20:43:36,798 - INFO - task 7_M2 of job 7 on worker 3 has finished executing
+2020-12-01 20:43:37,219 - INFO - started job 10
+2020-12-01 20:43:37,220 - INFO - started task 10_M0 of job 10 on worker 3
+2020-12-01 20:43:37,252 - INFO - started job 11
+2020-12-01 20:43:37,252 - INFO - started task 11_M0 of job 11 on worker 3
+2020-12-01 20:43:37,767 - INFO - task 7_M0 of job 7 on worker 1 has finished executing
+2020-12-01 20:43:37,768 - INFO - task 8_M0 of job 8 on worker 1 has finished executing
+2020-12-01 20:43:37,801 - INFO - task 11_M0 of job 11 on worker 3 has finished executing
+2020-12-01 20:43:38,255 - INFO - started task 11_M1 of job 11 on worker 1
+2020-12-01 20:43:38,257 - INFO - started task 11_M2 of job 11 on worker 1
+2020-12-01 20:43:38,258 - INFO - started task 11_M3 of job 11 on worker 3
+2020-12-01 20:43:38,259 - INFO - started job 12
+2020-12-01 20:43:38,276 - INFO - task 2_R0 of job 2 on worker 2 has finished executing
+2020-12-01 20:43:38,277 - INFO - task 6_M1 of job 6 on worker 2 has finished executing
+2020-12-01 20:43:38,760 - INFO - started task 12_M0 of job 12 on worker 2
+2020-12-01 20:43:38,761 - INFO - started task 12_M1 of job 12 on worker 2
+2020-12-01 20:43:38,770 - INFO - task 5_R0 of job 5 on worker 1 has finished executing
+2020-12-01 20:43:38,771 - INFO - task 11_M1 of job 11 on worker 1 has finished executing
+2020-12-01 20:43:38,772 - INFO - task 11_M2 of job 11 on worker 1 has finished executing
+2020-12-01 20:43:38,804 - INFO - task 8_M2 of job 8 on worker 3 has finished executing
+2020-12-01 20:43:38,804 - INFO - task 10_M0 of job 10 on worker 3 has finished executing
+2020-12-01 20:43:38,804 - INFO - started task 10_R0 of job 10 on worker 1
+2020-12-01 20:43:38,806 - INFO - started task 10_R1 of job 10 on worker 1
+2020-12-01 20:43:38,919 - INFO - started job 13
+2020-12-01 20:43:38,920 - INFO - started task 13_M0 of job 13 on worker 3
+2020-12-01 20:43:39,257 - INFO - started job 14
+2020-12-01 20:43:39,257 - INFO - started task 14_M0 of job 14 on worker 1
+2020-12-01 20:43:39,258 - INFO - started task 14_M1 of job 14 on worker 3
+2020-12-01 20:43:39,279 - INFO - task 4_R0 of job 4 on worker 2 has finished executing
+2020-12-01 20:43:39,280 - INFO - task 4_R1 of job 4 on worker 2 has finished executing
+2020-12-01 20:43:39,283 - INFO - task 7_M1 of job 7 on worker 2 has finished executing
+2020-12-01 20:43:39,284 - INFO - started task 7_R0 of job 7 on worker 2
+2020-12-01 20:43:39,285 - INFO - started task 7_R1 of job 7 on worker 2
+2020-12-01 20:43:39,285 - INFO - task 8_M1 of job 8 on worker 2 has finished executing
+2020-12-01 20:43:39,287 - INFO - started task 8_R0 of job 8 on worker 2
+2020-12-01 20:43:39,287 - INFO - task 12_M1 of job 12 on worker 2 has finished executing
+2020-12-01 20:43:39,759 - INFO - started task 14_M2 of job 14 on worker 2
+2020-12-01 20:43:39,776 - INFO - task 6_M0 of job 6 on worker 1 has finished executing
+2020-12-01 20:43:39,776 - INFO - started task 6_R0 of job 6 on worker 1
+2020-12-01 20:43:39,777 - INFO - started task 6_R1 of job 6 on worker 2
+2020-12-01 20:43:39,778 - INFO - task 9_M0 of job 9 on worker 1 has finished executing
+2020-12-01 20:43:39,778 - INFO - started task 9_R0 of job 9 on worker 1
+2020-12-01 20:43:39,779 - INFO - task 10_R0 of job 10 on worker 1 has finished executing
+2020-12-01 20:43:40,280 - INFO - started task 9_R1 of job 9 on worker 1
+2020-12-01 20:43:40,284 - INFO - task 14_M1 of job 14 on worker 3 has finished executing
+2020-12-01 20:43:40,288 - INFO - task 5_R1 of job 5 on worker 2 has finished executing
+2020-12-01 20:43:40,289 - INFO - task 8_R0 of job 8 on worker 2 has finished executing
+2020-12-01 20:43:40,393 - INFO - started job 15
+2020-12-01 20:43:40,398 - INFO - started task 15_M0 of job 15 on worker 2
+2020-12-01 20:43:40,400 - INFO - started task 15_M1 of job 15 on worker 2
+2020-12-01 20:43:40,779 - INFO - task 14_M0 of job 14 on worker 1 has finished executing
+2020-12-01 20:43:40,780 - INFO - task 9_R0 of job 9 on worker 1 has finished executing
+2020-12-01 20:43:40,807 - INFO - task 13_M0 of job 13 on worker 3 has finished executing
+2020-12-01 20:43:40,808 - INFO - started task 13_R0 of job 13 on worker 1
+2020-12-01 20:43:41,287 - INFO - task 12_M0 of job 12 on worker 2 has finished executing
+2020-12-01 20:43:41,288 - INFO - started task 12_R0 of job 12 on worker 3
+2020-12-01 20:43:41,288 - INFO - task 7_R1 of job 7 on worker 2 has finished executing
+2020-12-01 20:43:41,288 - INFO - started job 16
+2020-12-01 20:43:41,288 - INFO - started task 16_M0 of job 16 on worker 2
+2020-12-01 20:43:41,288 - INFO - started task 16_M1 of job 16 on worker 1
+2020-12-01 20:43:41,289 - INFO - started task 16_M2 of job 16 on worker 2
+2020-12-01 20:43:41,320 - INFO - started job 17
+2020-12-01 20:43:41,321 - INFO - started task 17_M0 of job 17 on worker 3
+2020-12-01 20:43:41,778 - INFO - task 10_R1 of job 10 on worker 1 has finished executing
+2020-12-01 20:43:41,809 - INFO - task 11_M3 of job 11 on worker 3 has finished executing
+2020-12-01 20:43:41,810 - INFO - started task 11_R0 of job 11 on worker 1
+2020-12-01 20:43:41,810 - INFO - started task 11_R1 of job 11 on worker 3
+2020-12-01 20:43:41,810 - INFO - task 12_R0 of job 12 on worker 3 has finished executing
+2020-12-01 20:43:41,822 - INFO - started task 17_M1 of job 17 on worker 3
+2020-12-01 20:43:42,289 - INFO - task 7_R0 of job 7 on worker 2 has finished executing
+2020-12-01 20:43:42,289 - INFO - task 14_M2 of job 14 on worker 2 has finished executing
+2020-12-01 20:43:42,290 - INFO - started task 14_R0 of job 14 on worker 2
+2020-12-01 20:43:42,291 - INFO - started task 14_R1 of job 14 on worker 2
+2020-12-01 20:43:42,780 - INFO - task 9_R1 of job 9 on worker 1 has finished executing
+2020-12-01 20:43:42,824 - INFO - started task 17_M2 of job 17 on worker 1
+2020-12-01 20:43:42,824 - INFO - started job 18
+2020-12-01 20:43:43,292 - INFO - task 6_R1 of job 6 on worker 2 has finished executing
+2020-12-01 20:43:43,293 - INFO - task 16_M0 of job 16 on worker 2 has finished executing
+2020-12-01 20:43:43,325 - INFO - started task 18_M0 of job 18 on worker 2
+2020-12-01 20:43:43,326 - INFO - started task 18_M1 of job 18 on worker 2
+2020-12-01 20:43:43,327 - INFO - started job 19
+2020-12-01 20:43:43,781 - INFO - task 6_R0 of job 6 on worker 1 has finished executing
+2020-12-01 20:43:43,781 - INFO - task 16_M1 of job 16 on worker 1 has finished executing
+2020-12-01 20:43:43,782 - INFO - task 17_M2 of job 17 on worker 1 has finished executing
+2020-12-01 20:43:43,827 - INFO - started task 19_M0 of job 19 on worker 1
+2020-12-01 20:43:43,828 - INFO - started task 19_M1 of job 19 on worker 1
+2020-12-01 20:43:43,830 - INFO - started task 19_M2 of job 19 on worker 1
+2020-12-01 20:43:44,294 - INFO - task 15_M0 of job 15 on worker 2 has finished executing
+2020-12-01 20:43:44,294 - INFO - task 15_M1 of job 15 on worker 2 has finished executing
+2020-12-01 20:43:44,295 - INFO - started task 15_R0 of job 15 on worker 2
+2020-12-01 20:43:44,295 - INFO - started task 15_R1 of job 15 on worker 2
+2020-12-01 20:43:44,785 - INFO - task 13_R0 of job 13 on worker 1 has finished executing
+2020-12-01 20:43:44,786 - INFO - task 11_R0 of job 11 on worker 1 has finished executing
+2020-12-01 20:43:44,786 - INFO - task 19_M1 of job 19 on worker 1 has finished executing
+2020-12-01 20:43:44,786 - INFO - task 19_M2 of job 19 on worker 1 has finished executing
+2020-12-01 20:43:44,813 - INFO - task 17_M0 of job 17 on worker 3 has finished executing
+2020-12-01 20:43:44,813 - INFO - task 11_R1 of job 11 on worker 3 has finished executing
+2020-12-01 20:43:44,813 - INFO - task 17_M1 of job 17 on worker 3 has finished executing
+2020-12-01 20:43:44,814 - INFO - started task 17_R0 of job 17 on worker 1
+2020-12-01 20:43:45,297 - INFO - task 16_M2 of job 16 on worker 2 has finished executing
+2020-12-01 20:43:45,297 - INFO - started task 16_R0 of job 16 on worker 1
+2020-12-01 20:43:45,298 - INFO - started task 16_R1 of job 16 on worker 3
+2020-12-01 20:43:45,301 - INFO - task 14_R0 of job 14 on worker 2 has finished executing
+2020-12-01 20:43:45,301 - INFO - task 14_R1 of job 14 on worker 2 has finished executing
+2020-12-01 20:43:45,302 - INFO - task 15_R1 of job 15 on worker 2 has finished executing
+2020-12-01 20:43:46,301 - INFO - task 18_M0 of job 18 on worker 2 has finished executing
+2020-12-01 20:43:47,302 - INFO - task 18_M1 of job 18 on worker 2 has finished executing
+2020-12-01 20:43:47,303 - INFO - started task 18_R0 of job 18 on worker 2
+2020-12-01 20:43:47,789 - INFO - task 19_M0 of job 19 on worker 1 has finished executing
+2020-12-01 20:43:47,790 - INFO - started task 19_R0 of job 19 on worker 2
+2020-12-01 20:43:47,792 - INFO - started task 19_R1 of job 19 on worker 2
+2020-12-01 20:43:47,792 - INFO - task 16_R0 of job 16 on worker 1 has finished executing
+2020-12-01 20:43:47,816 - INFO - task 16_R1 of job 16 on worker 3 has finished executing
+2020-12-01 20:43:48,304 - INFO - task 15_R0 of job 15 on worker 2 has finished executing
+2020-12-01 20:43:48,305 - INFO - task 19_R0 of job 19 on worker 2 has finished executing
+2020-12-01 20:43:48,791 - INFO - task 17_R0 of job 17 on worker 1 has finished executing
+2020-12-01 20:43:50,309 - INFO - task 18_R0 of job 18 on worker 2 has finished executing
+2020-12-01 20:43:50,309 - INFO - task 19_R1 of job 19 on worker 2 has finished executing

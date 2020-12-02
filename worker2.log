@@ -1,0 +1,74 @@
+2020-12-01 20:43:27,257 - INFO - worker 2 listening on port 4001
+2020-12-01 20:43:27,257 - INFO - worker 2 has started executing tasks
+2020-12-01 20:43:28,574 - INFO - task 0_M0 of job 0 has been added to the task list
+2020-12-01 20:43:28,575 - INFO - task 0_M1 of job 0 has been added to the task list
+2020-12-01 20:43:30,610 - INFO - task 2_M0 of job 2 has been added to the task list
+2020-12-01 20:43:30,613 - INFO - task 2_M2 of job 2 has been added to the task list
+2020-12-01 20:43:30,956 - INFO - task 3_M0 of job 3 has been added to the task list
+2020-12-01 20:43:31,261 - INFO - task 0_M0 of job 0 has finished executing
+2020-12-01 20:43:31,262 - INFO - task 3_M0 of job 3 has finished executing
+2020-12-01 20:43:31,263 - INFO - task 3_R0 of job 3 has been added to the task list
+2020-12-01 20:43:31,678 - INFO - task 4_M0 of job 4 has been added to the task list
+2020-12-01 20:43:32,264 - INFO - task 0_M1 of job 0 has finished executing
+2020-12-01 20:43:32,265 - INFO - task 2_M2 of job 2 has finished executing
+2020-12-01 20:43:33,926 - INFO - task 5_M2 of job 5 has been added to the task list
+2020-12-01 20:43:34,268 - INFO - task 2_M0 of job 2 has finished executing
+2020-12-01 20:43:34,269 - INFO - task 3_R0 of job 3 has finished executing
+2020-12-01 20:43:34,269 - INFO - task 5_M2 of job 5 has finished executing
+2020-12-01 20:43:34,270 - INFO - task 2_R0 of job 2 has been added to the task list
+2020-12-01 20:43:34,271 - INFO - task 2_R1 of job 2 has been added to the task list
+2020-12-01 20:43:35,270 - INFO - task 4_M0 of job 4 has finished executing
+2020-12-01 20:43:35,271 - INFO - task 2_R1 of job 2 has finished executing
+2020-12-01 20:43:35,274 - INFO - task 4_R0 of job 4 has been added to the task list
+2020-12-01 20:43:35,277 - INFO - task 4_R1 of job 4 has been added to the task list
+2020-12-01 20:43:36,199 - INFO - task 6_M1 of job 6 has been added to the task list
+2020-12-01 20:43:36,342 - INFO - task 7_M1 of job 7 has been added to the task list
+2020-12-01 20:43:36,576 - INFO - task 8_M1 of job 8 has been added to the task list
+2020-12-01 20:43:36,767 - INFO - task 5_R1 of job 5 has been added to the task list
+2020-12-01 20:43:38,275 - INFO - task 2_R0 of job 2 has finished executing
+2020-12-01 20:43:38,276 - INFO - task 6_M1 of job 6 has finished executing
+2020-12-01 20:43:38,760 - INFO - task 12_M0 of job 12 has been added to the task list
+2020-12-01 20:43:38,761 - INFO - task 12_M1 of job 12 has been added to the task list
+2020-12-01 20:43:39,278 - INFO - task 4_R0 of job 4 has finished executing
+2020-12-01 20:43:39,279 - INFO - task 4_R1 of job 4 has finished executing
+2020-12-01 20:43:39,280 - INFO - task 7_M1 of job 7 has finished executing
+2020-12-01 20:43:39,282 - INFO - task 8_M1 of job 8 has finished executing
+2020-12-01 20:43:39,282 - INFO - task 12_M1 of job 12 has finished executing
+2020-12-01 20:43:39,284 - INFO - task 7_R0 of job 7 has been added to the task list
+2020-12-01 20:43:39,286 - INFO - task 7_R1 of job 7 has been added to the task list
+2020-12-01 20:43:39,287 - INFO - task 8_R0 of job 8 has been added to the task list
+2020-12-01 20:43:39,759 - INFO - task 14_M2 of job 14 has been added to the task list
+2020-12-01 20:43:39,777 - INFO - task 6_R1 of job 6 has been added to the task list
+2020-12-01 20:43:40,284 - INFO - task 5_R1 of job 5 has finished executing
+2020-12-01 20:43:40,285 - INFO - task 8_R0 of job 8 has finished executing
+2020-12-01 20:43:40,398 - INFO - task 15_M0 of job 15 has been added to the task list
+2020-12-01 20:43:40,402 - INFO - task 15_M1 of job 15 has been added to the task list
+2020-12-01 20:43:41,287 - INFO - task 12_M0 of job 12 has finished executing
+2020-12-01 20:43:41,287 - INFO - task 7_R1 of job 7 has finished executing
+2020-12-01 20:43:41,288 - INFO - task 16_M0 of job 16 has been added to the task list
+2020-12-01 20:43:41,289 - INFO - task 16_M2 of job 16 has been added to the task list
+2020-12-01 20:43:42,288 - INFO - task 7_R0 of job 7 has finished executing
+2020-12-01 20:43:42,288 - INFO - task 14_M2 of job 14 has finished executing
+2020-12-01 20:43:42,290 - INFO - task 14_R0 of job 14 has been added to the task list
+2020-12-01 20:43:42,291 - INFO - task 14_R1 of job 14 has been added to the task list
+2020-12-01 20:43:43,290 - INFO - task 6_R1 of job 6 has finished executing
+2020-12-01 20:43:43,291 - INFO - task 16_M0 of job 16 has finished executing
+2020-12-01 20:43:43,325 - INFO - task 18_M0 of job 18 has been added to the task list
+2020-12-01 20:43:43,327 - INFO - task 18_M1 of job 18 has been added to the task list
+2020-12-01 20:43:44,293 - INFO - task 15_M0 of job 15 has finished executing
+2020-12-01 20:43:44,294 - INFO - task 15_M1 of job 15 has finished executing
+2020-12-01 20:43:44,295 - INFO - task 15_R0 of job 15 has been added to the task list
+2020-12-01 20:43:44,300 - INFO - task 15_R1 of job 15 has been added to the task list
+2020-12-01 20:43:45,295 - INFO - task 16_M2 of job 16 has finished executing
+2020-12-01 20:43:45,296 - INFO - task 14_R0 of job 14 has finished executing
+2020-12-01 20:43:45,300 - INFO - task 14_R1 of job 14 has finished executing
+2020-12-01 20:43:45,300 - INFO - task 15_R1 of job 15 has finished executing
+2020-12-01 20:43:46,301 - INFO - task 18_M0 of job 18 has finished executing
+2020-12-01 20:43:47,302 - INFO - task 18_M1 of job 18 has finished executing
+2020-12-01 20:43:47,303 - INFO - task 18_R0 of job 18 has been added to the task list
+2020-12-01 20:43:47,790 - INFO - task 19_R0 of job 19 has been added to the task list
+2020-12-01 20:43:47,792 - INFO - task 19_R1 of job 19 has been added to the task list
+2020-12-01 20:43:48,303 - INFO - task 15_R0 of job 15 has finished executing
+2020-12-01 20:43:48,304 - INFO - task 19_R0 of job 19 has finished executing
+2020-12-01 20:43:50,307 - INFO - task 18_R0 of job 18 has finished executing
+2020-12-01 20:43:50,308 - INFO - task 19_R1 of job 19 has finished executing
