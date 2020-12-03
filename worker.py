@@ -37,6 +37,7 @@ def listen_for_tasks(port_no, worker_id, tasks):
         c = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         c.connect(("localhost", port_no))
         task = json.loads(c.recv(256).decode())
+        c.close()
 
         thread_lock.acquire()
         tasks.append(task)
@@ -48,6 +49,8 @@ def execute_tasks(port_no, worker_id, tasks):
     logging.info(f"worker {worker_id} has started executing tasks")
 
     while True:
+        time.sleep(1)
+
         thread_lock.acquire()
         for task in tasks:
             task["duration"] -= 1
@@ -68,8 +71,6 @@ def execute_tasks(port_no, worker_id, tasks):
                 client_socket.send((json.dumps(task_completed_json) + '\n').encode())
 
         thread_lock.release()
-
-        time.sleep(1)
 
 
 def main():

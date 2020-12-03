@@ -19,7 +19,7 @@ def getstats(t):
 
     print("-" * 50)
     print(f"For {types[t]} scheduling")
-    print("-" * 50 + "\n")
+    print("-" * 50)
     log = open(f"master_{t}.log")
 
     for line in log:
@@ -43,17 +43,17 @@ def getstats(t):
     task_times = []
     for job_id in jobs.keys():
         last_task_time = jobs[job_id][0]
-        print(f"In Job {job_id}")
+        # print(f"In Job {job_id}")
         for task_id in jobs[job_id][1]:
             task_time = (
                 jobs[job_id][2][task_id] - jobs[job_id][1][task_id]
             ).total_seconds()
             task_times.append(task_time)
-            print(f"Time Taken for task {task_id} : {task_time}")
+            # print(f"Time Taken for task {task_id} : {task_time}")
             last_task_time = jobs[job_id][2][task_id]
         job_time = (last_task_time - jobs[job_id][0]).total_seconds()
         job_times.append(job_time)
-        print(f"Total job time : {job_time}\n")
+        # print(f"Total job time : {job_time}\n")
     log.close()
     res = [
         np.mean(job_times),

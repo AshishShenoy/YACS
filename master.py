@@ -95,6 +95,7 @@ def listen_for_jobs(workers, scheduling_algo, jobs):
             for task in job_request["map_tasks"]:
                 assigned = False
                 while not assigned:
+                    thread_lock.acquire()
                     if scheduling_algo == "RANDOM":
                         selected_worker_id = random.randint(1, len(workers))
 
@@ -102,11 +103,8 @@ def listen_for_jobs(workers, scheduling_algo, jobs):
                         selected_worker_id = all_worker_ids[selected_worker_index]
 
                     elif scheduling_algo == "LL":
-                        thread_lock.acquire()
                         selected_worker_id = max(workers, key=lambda worker: workers[worker]["free_slots"])
-                        thread_lock.release()
-                    
-                    thread_lock.acquire()
+
                     if workers[selected_worker_id]["free_slots"] > 0:
                         send_task_to_worker(workers[selected_worker_id], job_request["job_id"], task)
                         workers[selected_worker_id]["free_slots"] -= 1
@@ -121,9 +119,10 @@ def listen_for_jobs(workers, scheduling_algo, jobs):
                         thread_lock.release()
                         if scheduling_algo == "LL":
                             logging.debug(f"all workers have filled slots")
+                            time.sleep(1)
                         else:
                             logging.debug(f"all slots of worker {selected_worker_id} are full")
-                        time.sleep(0.5)
+                            time.sleep(0.1)
                     
                     selected_worker_index = (selected_worker_index + 1) % len(workers)
             client_socket.close()
@@ -170,6 +169,7 @@ def listen_to_workers(workers, scheduling_algo, jobs):
                     for task in jobs[job_id]["reduce_tasks"]:
                         assigned = False
                         while not assigned:
+                            thread_lock.acquire()
                             if scheduling_algo == "RANDOM":
                                 selected_worker_id = random.randint(1, len(workers))
 
@@ -177,11 +177,9 @@ def listen_to_workers(workers, scheduling_algo, jobs):
                                 selected_worker_id = all_worker_ids[selected_worker_index]
 
                             elif scheduling_algo == "LL":
-                                thread_lock.acquire()
-                                selected_worker_id = max(workers, key=lambda worker: workers[worker]["free_slots"])
-                                thread_lock.release()
 
-                            thread_lock.acquire()
+                                selected_worker_id = max(workers, key=lambda worker: workers[worker]["free_slots"])
+
                             if workers[selected_worker_id]["free_slots"] > 0:
                                 send_task_to_worker(workers[selected_worker_id], job_id, task)
                                 workers[selected_worker_id]["free_slots"] -= 1
@@ -196,10 +194,12 @@ def listen_to_workers(workers, scheduling_algo, jobs):
                                 thread_lock.release()
                                 if scheduling_algo == "LL":
                                     logging.debug(f"all workers have filled slots")
+                                    time.sleep(1)
                                 else:
                                     logging.debug(f"all slots of worker {selected_worker_id} are full")
+                                    time.sleep(0.1)
+                                
                                 finish_task_from_worker(workers, server_worker_socket, jobs)
-                                time.sleep(0.5)
                             
                             selected_worker_index = (selected_worker_index + 1) % len(workers)
 
