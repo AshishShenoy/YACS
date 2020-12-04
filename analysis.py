@@ -16,7 +16,7 @@ def getdt(line):
 
 def getstats(t):
     jobs = {}
-    # jobs = {job_id:[job_start_time, [task_start_times], [task_end_times]],}
+    # jobs = {job_id:[job_start_time, {task_id:task_start_time,}, {task_id:task_end_time,}],}
     print("-" * 50)
     print(f"For {types[t]} scheduling")
     print("-" * 50)
