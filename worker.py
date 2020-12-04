@@ -37,6 +37,7 @@ def listen_for_tasks(port_no, worker_id, tasks):
         c = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         c.connect(("localhost", port_no))
         task = json.loads(c.recv(256).decode())
+        task["is_executable"] = False
         c.close()
 
         thread_lock.acquire()
@@ -53,7 +54,9 @@ def execute_tasks(port_no, worker_id, tasks):
 
         thread_lock.acquire()
         for task in tasks:
-            task["duration"] -= 1
+            if task["is_executable"]:
+                task["duration"] -= 1
+            task["is_executable"] = True
 
         tasks_to_end = []
         for task in tasks:
