@@ -16,7 +16,7 @@ def getdt(line):
 
 def getstats(t):
     jobs = {}
-
+    # jobs = {job_start_time, [task_start_times], [task_end_times]}
     print("-" * 50)
     print(f"For {types[t]} scheduling")
     print("-" * 50)
@@ -72,13 +72,7 @@ def plotline(t):
     log = open(f"master_{t}.log")
     initial_time = None
     workers = {}
-
-    def getdt(line):
-        dtpattern = r"\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}\,\d{3}"
-        date = re.search(dtpattern, line)
-        dt = datetime.datetime.strptime(date.group(0), r"%Y-%m-%d %H:%M:%S,%f")
-        return dt
-
+    # {worker_id, [[filled_slots],[time_of_update]]}
     first_line = True
     for line in log:
         if first_line:
