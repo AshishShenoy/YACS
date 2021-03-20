@@ -1,0 +1,5 @@
+# Virtual Environment files.
+venv
+
+# IDE files.
+.vscode
