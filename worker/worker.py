@@ -11,7 +11,7 @@ thread_lock = threading.Lock()
 
 def init_logging(worker_id):
     logging.basicConfig(
-        filename=f"worker{worker_id}.log",
+        filename=f"../logs/worker{worker_id}.log",
         filemode="w",
         level=logging.DEBUG,
         format="%(asctime)s - %(levelname)s - %(message)s",
@@ -21,7 +21,7 @@ def init_logging(worker_id):
 
 def read_args():
     if len(sys.argv) != 3:
-        print("Usage: python Worker.py <port> <worker-id>")
+        print("Usage: python worker.py <port> <worker-id>")
         exit()
 
     port_no = int(sys.argv[1])

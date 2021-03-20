@@ -18,7 +18,7 @@ random.seed(3)
 
 def read_args():
     if len(sys.argv) != 3:
-        print("Usage: python Master.py /path/to/config <scheduling-algorithm>")
+        print("Usage: python master.py /path/to/config <scheduling-algorithm>")
         exit(1)
 
     config_file = sys.argv[1]
@@ -32,7 +32,7 @@ def read_args():
 
 def init_logging(scheduling_algo):
     logging.basicConfig(
-        filename=f"master_{scheduling_algo}.log",
+        filename=f"../logs/master_{scheduling_algo}.log",
         filemode="w",
         level=logging.DEBUG,
         format="%(asctime)s - %(levelname)s - %(message)s",

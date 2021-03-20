@@ -20,7 +20,7 @@ def getstats(t):
     print("-" * 50)
     print(f"For {types[t]} scheduling")
     print("-" * 50)
-    log = open(f"master_{t}.log")
+    log = open(f"logs/master_{t}.log")
 
     for line in log:
         if "INFO" in line:
@@ -69,7 +69,7 @@ def getstats(t):
 
 
 def plotline(t):
-    log = open(f"master_{t}.log")
+    log = open(f"logs/master_{t}.log")
     initial_time = None
     workers = {}
     # {worker_id:[[filled_slots],[time_of_update]],}
@@ -106,7 +106,7 @@ def plotline(t):
     plt.xlabel("Time")
     plt.ylabel("Number of filled slots")
     plt.legend()
-    plt.savefig(f"worker_plot_{t}.png")
+    plt.savefig(f"plots/workers_plot_{t}.png")
 
 
 plotline("RANDOM")
@@ -139,4 +139,4 @@ ax.set_xticklabels(sceduling_types)
 ax.legend()
 
 
-plt.savefig("time_plot.png")
+plt.savefig("plots/time_plot.png")
