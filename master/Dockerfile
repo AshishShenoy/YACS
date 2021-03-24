@@ -1,0 +1,6 @@
+FROM python:3.8-slim
+
+WORKDIR /master
+
+EXPOSE 5000
+EXPOSE 5001

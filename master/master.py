@@ -5,10 +5,19 @@ import logging
 import json
 import time
 import random
+import os
 
 
+# Docker requires loopback address to be 0.0.0.0 instead of localhost.
+# 'localhost' is chosen if run manually without docker.
+JOB_REQUESTS_HOST = os.getenv("LOOPBACK_ADDRESS", "localhost")
 JOB_REQUESTS_PORT = 5000
+
+WORKER_RESPONSES_HOST = os.getenv("LOOPBACK_ADDRESS", "localhost")
 WORKER_RESPONSES_PORT = 5001
+
+WORKER_ACCEPT_JOBS_HOST = os.getenv("LOOPBACK_ADDRESS", "localhost")
+
 ALL_MAPPERS_COMPLETED_CODE = -1
 
 
@@ -46,7 +55,7 @@ def preprocess_workers(workers):
 
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        s.bind(("localhost", int(worker["port"])))
+        s.bind((WORKER_ACCEPT_JOBS_HOST, int(worker["port"])))
         s.listen(50)
         worker["socket"] = s
 
@@ -76,7 +85,7 @@ def send_task_to_worker(worker, job_id, task):
 def listen_for_jobs(workers, scheduling_algo, jobs):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as job_request_socket:
         job_request_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        job_request_socket.bind(("localhost", JOB_REQUESTS_PORT))
+        job_request_socket.bind((JOB_REQUESTS_HOST, JOB_REQUESTS_PORT))
         job_request_socket.listen(50)
 
         selected_worker_index = 0
@@ -123,7 +132,7 @@ def listen_for_jobs(workers, scheduling_algo, jobs):
                         else:
                             logging.debug(f"all slots of worker {selected_worker_id} are full")
                             time.sleep(0.1)
-                    
+
                     selected_worker_index = (selected_worker_index + 1) % len(workers)
             client_socket.close()
 
@@ -155,7 +164,7 @@ def finish_task_from_worker(workers, server_worker_socket, jobs):
 def listen_to_workers(workers, scheduling_algo, jobs):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_worker_socket:
         server_worker_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        server_worker_socket.bind(("localhost", WORKER_RESPONSES_PORT))
+        server_worker_socket.bind((WORKER_RESPONSES_HOST, WORKER_RESPONSES_PORT))
         server_worker_socket.listen(50)
 
         selected_worker_index = 0
@@ -198,9 +207,9 @@ def listen_to_workers(workers, scheduling_algo, jobs):
                                 else:
                                     logging.debug(f"all slots of worker {selected_worker_id} are full")
                                     time.sleep(0.1)
-                                
+
                                 finish_task_from_worker(workers, server_worker_socket, jobs)
-                            
+
                             selected_worker_index = (selected_worker_index + 1) % len(workers)
 
                     jobs[job_id]["unfinished_map_tasks"] = ALL_MAPPERS_COMPLETED_CODE

@@ -4,7 +4,11 @@ import threading
 import logging
 import json
 import time
+import os
 
+
+MASTER_HOST = os.getenv("MASTER_HOST", "localhost")
+MASTER_RESPONSE_PORT = 5001
 
 thread_lock = threading.Lock()
 
@@ -35,7 +39,7 @@ def listen_for_tasks(port_no, worker_id, tasks):
 
     while True:
         c = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        c.connect(("localhost", port_no))
+        c.connect((MASTER_HOST, port_no))
         task = json.loads(c.recv(256).decode())
         task["is_executable"] = False
         c.close()
@@ -70,8 +74,8 @@ def execute_tasks(port_no, worker_id, tasks):
             task_completed_json = {"task_id": task["task_id"], "job_id": task["job_id"], "worker_id": worker_id}
 
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
-                client_socket.connect(("localhost", 5001))
-                client_socket.send((json.dumps(task_completed_json) + '\n').encode())
+                client_socket.connect((MASTER_HOST, MASTER_RESPONSE_PORT))
+                client_socket.send((json.dumps(task_completed_json) + "\n").encode())
 
         thread_lock.release()
 

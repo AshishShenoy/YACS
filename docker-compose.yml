@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+    master:
+        build: ./master
+        volumes:
+            - ./master:/master
+            - ./logs:/logs
+        environment:
+            - LOOPBACK_ADDRESS=0.0.0.0
+        command: python3 master.py config.json RR
+
+    worker1:
+        build: ./worker
+        volumes:
+            - ./worker:/worker
+            - ./logs:/logs
+        ports:
+            - 4000
+        environment:
+            - MASTER_HOST=master
+        command: python3 worker.py 4000 1
+        depends_on: [master]
+
+    worker2:
+        build: ./worker
+        volumes:
+            - ./worker:/worker
+            - ./logs:/logs
+        ports:
+            - 4001
+        environment:
+            - MASTER_HOST=master
+        command: python3 worker.py 4001 2
+        depends_on: [master]
+
+    worker3:
+        build: ./worker
+        volumes:
+            - ./worker:/worker
+            - ./logs:/logs
+        ports:
+            - 4002
+        environment:
+            - MASTER_HOST=master
+        command: python3 worker.py 4002 3
+        depends_on: [master]
+
+    requests:
+        build: ./requests
+        volumes:
+            - ./requests:/requests
+        environment:
+            - MASTER_HOST=master
+        command: python3 requests.py 10
+        depends_on: [master, worker1, worker2, worker3]

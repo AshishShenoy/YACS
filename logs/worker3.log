@@ -1,10 +1,22 @@
-2021-03-20 20:12:05,645 - INFO - worker 3 listening on port 4002
-2021-03-20 20:12:05,646 - INFO - worker 3 has started executing tasks
-2021-03-20 20:12:10,416 - INFO - task 4_M0 of job 4 has been added to the task list
-2021-03-20 20:12:14,655 - INFO - task 4_M0 of job 4 has finished executing
-2021-03-20 20:12:14,931 - INFO - task 6_M1 of job 6 has been added to the task list
-2021-03-20 20:12:15,075 - INFO - task 7_M2 of job 7 has been added to the task list
-2021-03-20 20:12:16,657 - INFO - task 7_M2 of job 7 has finished executing
-2021-03-20 20:12:18,178 - INFO - task 7_R0 of job 7 has been added to the task list
-2021-03-20 20:12:18,659 - INFO - task 6_M1 of job 6 has finished executing
-2021-03-20 20:12:21,663 - INFO - task 7_R0 of job 7 has finished executing
+2021-03-24 11:52:22,873 - INFO - worker 3 listening on port 4002
+2021-03-24 11:52:22,874 - INFO - worker 3 has started executing tasks
+2021-03-24 11:52:25,079 - INFO - task 1_M0 of job 1 has been added to the task list
+2021-03-24 11:52:26,320 - INFO - task 2_M2 of job 2 has been added to the task list
+2021-03-24 11:52:27,389 - INFO - task 4_M0 of job 4 has been added to the task list
+2021-03-24 11:52:28,880 - INFO - task 1_M0 of job 1 has finished executing
+2021-03-24 11:52:28,881 - INFO - task 2_M2 of job 2 has finished executing
+2021-03-24 11:52:28,883 - INFO - task 1_R0 of job 1 has been added to the task list
+2021-03-24 11:52:29,628 - INFO - task 5_M2 of job 5 has been added to the task list
+2021-03-24 11:52:30,884 - INFO - task 5_M2 of job 5 has finished executing
+2021-03-24 11:52:31,887 - INFO - task 4_M0 of job 4 has finished executing
+2021-03-24 11:52:31,888 - INFO - task 1_R0 of job 1 has finished executing
+2021-03-24 11:52:31,891 - INFO - task 4_R1 of job 4 has been added to the task list
+2021-03-24 11:52:31,904 - INFO - task 6_M1 of job 6 has been added to the task list
+2021-03-24 11:52:32,050 - INFO - task 7_M2 of job 7 has been added to the task list
+2021-03-24 11:52:33,892 - INFO - task 7_M2 of job 7 has finished executing
+2021-03-24 11:52:35,873 - INFO - task 7_R0 of job 7 has been added to the task list
+2021-03-24 11:52:35,895 - INFO - task 6_M1 of job 6 has finished executing
+2021-03-24 11:52:36,877 - INFO - task 6_R0 of job 6 has been added to the task list
+2021-03-24 11:52:36,897 - INFO - task 4_R1 of job 4 has finished executing
+2021-03-24 11:52:38,900 - INFO - task 7_R0 of job 7 has finished executing
+2021-03-24 11:52:40,904 - INFO - task 6_R0 of job 6 has finished executing
