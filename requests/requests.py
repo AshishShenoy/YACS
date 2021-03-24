@@ -3,8 +3,12 @@ import socket
 import time
 import sys
 import random
+import os
 import numpy as np
 
+
+REQUESTS_HOST = os.getenv("MASTER_HOST", "localhost")
+REQUESTS_PORT = 5000
 
 np.random.seed(3)
 random.seed(3)
@@ -25,7 +29,7 @@ def create_job_request(job_id):
 
 def send_request(job_request):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.connect(("localhost", 5000))
+        s.connect((REQUESTS_HOST, REQUESTS_PORT))
         message = json.dumps(job_request)
         # send task
         s.send(message.encode())
